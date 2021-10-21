@@ -1,0 +1,37 @@
+:root {
+    /* Colors: */
+    --color-blue: #48B5FE;
+    --color-white: #FFFFFF;
+    --color-grey: #E4E4E4;
+    --color-black: #000000;
+    --color-ebf7ff: #EBF7FF;
+    --color-grey2: #F5F5F5;
+    --color-yellow: #FEC148;
+    --color-blue2: #268DD2;
+
+    /* Font/text values */
+    --font-family: "Fira Sans";
+    --font-style: normal;
+    --font-weight: normal;
+    --font-size: 14px;
+    --character-spacing: 0px;
+    --line-spacing: 20px;
+}
+
+#root {
+    margin-top: 42px;
+    margin-left: 110px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+/* Character Styles */
+.characters-styled {
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    line-height: var(--line-spacing);
+    letter-spacing: var(--character-spacing);
+    color: var(--color-black);
+}
