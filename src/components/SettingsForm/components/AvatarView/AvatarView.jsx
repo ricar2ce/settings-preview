@@ -4,7 +4,7 @@ import Icon from "@mdi/react";
 import {mdiPackageUp} from "@mdi/js";
 import './AvatarView.css'
 
-function AvatarView() {
+function AvatarView({value, onChange}) {
     const [fileList, setFileList] = useState([]);
     const [{previewVisible,previewImage,previewTitle}, setState] = useState({
         previewVisible: false,
@@ -12,17 +12,18 @@ function AvatarView() {
         previewTitle: ''
     });
 
-    const onChange = useCallback(({target}) => {
+    const handleChange = useCallback(({target}) => {
         if (target.files && target.files[0]) {
             let reader = new FileReader();
 
             reader.onload = function (e) {
                 setFileList( e.target.result)
+                onChange(e.target.result)
             };
 
             reader.readAsDataURL(target.files[0]);
         }
-    }, []);
+    }, [onChange]);
 
     const inputCharge = () => {
       document.getElementById('avatar-button-input').click();
@@ -49,7 +50,7 @@ function AvatarView() {
                     <Avatar className="avatar-image pointer" size={67} src={fileList} onClick={handlePreview} > B </Avatar>
                 </Col>
                 <Col>
-                    <input id="avatar-button-input" type='file' onChange={onChange} className="avatar-button"/>
+                    <input id="avatar-button-input" type='file' onChange={handleChange} className="avatar-button"/>
                     <label form="avatar-button-input" className="ant-btn-lg ant-input around-center pointer button-upload" onClick={inputCharge} >
                         <Icon className="button-upload-icon" path={mdiPackageUp} size={1} />
                         subir logo

@@ -1,11 +1,13 @@
+import React, {memo} from "react";
+import PropTypes from 'prop-types'
 
-export default function Preview(props) {
+const Preview = ({url, color , name}) => {
     return (
         <svg className="preview" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="598"
              viewBox="0 0 807 598">
             <defs >
                 <style>
-                    {`.a,.b,.k{fill:#fff;}.a{stroke:#707070;}.b{stroke:#e4e4e4;}.c,.m{fill:#f5f6f8;}.d{clip - path:url(#a);}.e{fill:#feaf31;}.f{fill:#f5f5f5;}.ac,.g,.h{fill:none;}.g{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.h{stroke:${props.color};}.i{fill:#eaf0ff;}.i,.r{opacity:0.5;}.j{fill:#d8dfff;}.l{clip - path:url(#d);}.m{stroke:#196fc1;}.n{fill:#bcbec1;}.o{fill:#c7e4ff;}.p{fill:#e1e8eb;}.q{fill:#b4d5f5;}.aa,.r{fill:#cfd0d2;}.s{fill:${props.color};}.t{fill:#e7eaee;}.u{fill:#dfdfdf;}.ae,.v{fill:#538944;}.v,.w{font - size:14px;}.v{font - family:OpenSans-SemiBold, Open Sans;font-weight:600;}.w{font - family:OpenSans-Regular, Open Sans;}.x{fill:#2b2b2b;}.ad,.x{opacity:0.2;}.y{clip - path:url(#o);}.z{fill:#ebf7ff;}.ab{fill:#ffc60a;}.af{stroke:none;}.ag{filter:url(#m);}.ah{filter:url(#k);}.ai{filter:url(#i);}.aj{filter:url(#g);}.ak{filter:url(#e);}.al{filter:url(#b);}`}
+                    {`.a,.b,.k{fill:#fff;}.a{stroke:#707070;}.b{stroke:#e4e4e4;}.c,.m{fill:#f5f6f8;}.d{clip - path:url(#a);}.e{fill:#feaf31;}.f{fill:#f5f5f5;}.ac,.g,.h{fill:none;}.g{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.h{stroke:${color};}.i{fill:#eaf0ff;}.i,.r{opacity:0.5;}.j{fill:#d8dfff;}.l{clip - path:url(#d);}.m{stroke:#196fc1;}.n{fill:#bcbec1;}.o{fill:#c7e4ff;}.p{fill:#e1e8eb;}.q{fill:#b4d5f5;}.aa,.r{fill:#cfd0d2;}.s{fill:${color};}.t{fill:#e7eaee;}.u{fill:#dfdfdf;}.ae,.v{fill:#538944;}.v,.w{font - size:14px;}.v{font - family:OpenSans-SemiBold, Open Sans;font-weight:600;}.w{font - family:OpenSans-Regular, Open Sans;}.x{fill:#2b2b2b;}.ad,.x{opacity:0.2;}.y{clip - path:url(#o);}.z{fill:#ebf7ff;}.ab{fill:#ffc60a;}.af{stroke:none;}.ag{filter:url(#m);}.ah{filter:url(#k);}.ai{filter:url(#i);}.aj{filter:url(#g);}.ak{filter:url(#e);}.al{filter:url(#b);}`}
                 </style>
                 <clipPath id="a">
                     <rect className="a" width="807" height="598" transform="translate(1093 225)"/>
@@ -171,10 +173,10 @@ export default function Preview(props) {
                         <tspan x="0" y="0">https:</tspan>
                     </text>
                     <text className="w" transform="translate(3892.538 705.215)">
-                        <tspan x="0" y="0">{props.url}</tspan>
+                        <tspan x="0" y="0">{url}</tspan>
                     </text>
                     <text className="w" transform="translate(3742.538 673.215)">
-                        <tspan x="0" y="0">Plankton - {props.name}</tspan>
+                        <tspan x="0" y="0">Plankton - {name}</tspan>
                     </text>
                     <rect className="x" width="1" height="16" transform="translate(3843 692)"/>
                     <circle className="u" cx="10" cy="10" r="10" transform="translate(3716 658)"/>
@@ -268,3 +270,11 @@ export default function Preview(props) {
 Preview.defaultProps = {
     url: 'mi_dominio.plankton.com/proyectos/plan_de_ventas'
 }
+
+Preview.propTypes = {
+    url: PropTypes.string,
+    name: PropTypes.string,
+    color: PropTypes.string,
+}
+
+export default memo(Preview);
