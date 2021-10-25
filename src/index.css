@@ -4,6 +4,7 @@
     --color-white: #FFFFFF;
     --color-grey: #E4E4E4;
     --color-black: #000000;
+    --color-dark: #343C4A;
     --color-ebf7ff: #EBF7FF;
     --color-grey2: #F5F5F5;
     --color-yellow: #FEC148;
@@ -34,4 +35,28 @@
     line-height: var(--line-spacing);
     letter-spacing: var(--character-spacing);
     color: var(--color-black);
+}
+
+/*.preview-col {
+    min-height: 598px;
+}*/
+.preview {
+    position: fixed;
+    max-width: 40%;
+    max-height: 598px;
+    right: 0;
+}
+
+.around-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.ml-md {
+    margin-left: 15px;
 }

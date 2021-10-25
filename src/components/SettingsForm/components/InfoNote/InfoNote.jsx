@@ -10,11 +10,7 @@ function InfoNote(props) {
         <div className="info-note-card">
             <Row gutter={8}>
                 <Col className="gutter-row" >
-                    <Icon path={mdiAlertCircleOutline}
-                          size={1}
-                          horizontal
-                          vertical
-                    />
+                    <Icon path={mdiAlertCircleOutline } size={1} />
                 </Col>
                 <Col className="gutter-row" span={22}>
                     <Row>

@@ -1,0 +1,23 @@
+.avatar-image {
+    background-color: #343C4A;
+    color: #fff;
+    font-weight: bold;
+    font-size: 37px !important;
+}
+
+.avatar-button {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.button-upload {
+    height: 32px !important;
+}
+
+.button-upload-icon {
+    color: #00000080;
+}

@@ -1,7 +1,7 @@
 
 export default function Preview(props) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="598"
+        <svg className="preview" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="598"
              viewBox="0 0 807 598">
             <defs >
                 <style>
@@ -171,10 +171,10 @@ export default function Preview(props) {
                         <tspan x="0" y="0">https:</tspan>
                     </text>
                     <text className="w" transform="translate(3892.538 705.215)">
-                        <tspan x="0" y="0">mi_dominio.plankton.com/proyectos/plan_de_ventas</tspan>
+                        <tspan x="0" y="0">{props.url}</tspan>
                     </text>
                     <text className="w" transform="translate(3742.538 673.215)">
-                        <tspan x="0" y="0">Plankton - Mi Espacio</tspan>
+                        <tspan x="0" y="0">Plankton - {props.name}</tspan>
                     </text>
                     <rect className="x" width="1" height="16" transform="translate(3843 692)"/>
                     <circle className="u" cx="10" cy="10" r="10" transform="translate(3716 658)"/>
@@ -264,3 +264,7 @@ export default function Preview(props) {
         </svg>
     );
 };
+
+Preview.defaultProps = {
+    url: 'mi_dominio.plankton.com/proyectos/plan_de_ventas'
+}

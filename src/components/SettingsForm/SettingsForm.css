@@ -1,7 +1,78 @@
+.settings-form {
+    max-width: 613px;
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
 .font-title {
     text-align: left;
     font: normal bold 18px/20px 'Fira Sans';
     letter-spacing: 0;
     color: #000000D6;
     opacity: 1;
+}
+
+.ant-form-item>.ant-form-item-label>label {
+    font-weight: bold;
+}
+
+.ant-input, form input, form button {
+    border-radius: 0.313rem !important;
+    height: 2.813rem !important;
+}
+.ant-radio-group {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.ant-radio-group .ant-radio-button-wrapper{
+    border-radius: 5px;
+    min-height: 2.813rem;
+    display: flex;
+    align-items: center;
+}
+
+.ant-radio-group .ant-radio-button-wrapper::before{
+    opacity: 0;
+}
+.ant-radio-button-wrapper {
+    border-left: 1px solid #d9d9d9;
+}
+
+.radio-options-card .ant-radio-button-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    width: 399px;
+    border-radius: 5px;
+    padding: 15px 20px 0 12px;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+.radio-options-card .ant-radio-button {
+    position: relative !important;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+}
+
+.radio-options-card .ant-radio-button-checked .ant-radio-button-input{
+    opacity: 1 !important;
+}
+.radio-options-card .ant-radio-button-input{
+    opacity: 0.5 !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.radio-color-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
 }
