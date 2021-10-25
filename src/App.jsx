@@ -2,6 +2,7 @@ import React, {memo} from 'react';
 import {Col, Row} from "antd";
 import SettingsForm from "./components/SettingsForm/SettingsForm";
 import Preview from "./components/Preview/Preview";
+import {useWrapper} from "./hooks/useWrapper";
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                 <SettingsForm/>
             </Col>
             <Col className="preview-col" xs={0} sm={0} md={12} lg={12} xl={12}>
-                <Preview url="http://direccion.dominio.com" color="blue" name="dofleini" />
+                <Preview />
             </Col>
         </Row>
     );

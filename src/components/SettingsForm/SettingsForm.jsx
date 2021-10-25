@@ -6,10 +6,16 @@ import './SettingsForm.css'
 import InfoNote from "./components/InfoNote/InfoNote";
 import AvatarView from "./components/AvatarView/AvatarView";
 import RadioColorGroup from "./components/RadioColorGroup/RadioColorGroup";
+import {useWrapper} from "../../hooks/useWrapper";
 
 export default function SettingsForm () {
     const [form] = Form.useForm()
     const handleFinish = useCallback(values => console.log('Submit: ', values), [])
+
+    const {values, setValues} = useWrapper()
+    const onValueChange = useCallback(v => {
+        setValues({...values,...v});
+    }, [values,setValues])
 
     const meta = [
         {
@@ -135,7 +141,7 @@ export default function SettingsForm () {
                     privacy: 'Privado',
                     quantity: '11 - 25'
                 }}
-                // onValuesChange={forceUpdate}
+                onValuesChange={onValueChange}
             >
                 <Form.Item className="form-header">
                     <span className="font-title">Configuración</span>

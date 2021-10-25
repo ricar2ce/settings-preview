@@ -1,7 +1,11 @@
 import React, {memo} from "react";
 import PropTypes from 'prop-types'
+import {useWrapper} from "../../hooks/useWrapper";
 
-const Preview = ({url, color , name}) => {
+const Preview = () => {
+    const {values} = useWrapper();
+    const {url, color , name} = values;
+
     return (
         <svg className="preview" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" height="598"
              viewBox="0 0 807 598">
