@@ -11,7 +11,7 @@ const Preview = () => {
              viewBox="0 0 807 598">
             <defs >
                 <style>
-                    {`.a,.b,.k{fill:#fff;}.a{stroke:#707070;}.b{stroke:#e4e4e4;}.c,.m{fill:#f5f6f8;}.d{clip - path:url(#a);}.e{fill:#feaf31;}.f{fill:#f5f5f5;}.ac,.g,.h{fill:none;}.g{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.h{stroke:${color};}.i{fill:#eaf0ff;}.i,.r{opacity:0.5;}.j{fill:#d8dfff;}.l{clip - path:url(#d);}.m{stroke:#196fc1;}.n{fill:#bcbec1;}.o{fill:#c7e4ff;}.p{fill:#e1e8eb;}.q{fill:#b4d5f5;}.aa,.r{fill:#cfd0d2;}.s{fill:${color};}.t{fill:#e7eaee;}.u{fill:#dfdfdf;}.ae,.v{fill:#538944;}.v,.w{font - size:14px;}.v{font - family:OpenSans-SemiBold, Open Sans;font-weight:600;}.w{font - family:OpenSans-Regular, Open Sans;}.x{fill:#2b2b2b;}.ad,.x{opacity:0.2;}.y{clip - path:url(#o);}.z{fill:#ebf7ff;}.ab{fill:#ffc60a;}.af{stroke:none;}.ag{filter:url(#m);}.ah{filter:url(#k);}.ai{filter:url(#i);}.aj{filter:url(#g);}.ak{filter:url(#e);}.al{filter:url(#b);}`}
+                    {`.a,.b,.k{fill:#fff;}.a{stroke:#707070;}.b{stroke:#e4e4e4;}.c,.m{fill:#f5f6f8;}.d{clip - path:url(#a);}.e{fill:#feaf31;}.f{fill:#f5f5f5;}.ac,.g,.h{fill:none;}.g{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.h{stroke:${color};}.i{fill:#eaf0ff;}.i,.r{opacity:0.5;}.j{fill:#d8dfff;}.l{clip - path:url(#d);}.m{stroke:#196fc1;}.n{fill:#bcbec1;}.o{fill:${color}47;}.p{fill:#e1e8eb;}.q{fill:${color}45;}.aa,.r{fill:#cfd0d2;}.s{fill:${color};}.t{fill:#e7eaee;}.u{fill:#dfdfdf;}.ae,.v{fill:#538944;}.v,.w{font - size:14px;}.v{font - family:OpenSans-SemiBold, Open Sans;font-weight:600;}.w{font - family:OpenSans-Regular, Open Sans;}.x{fill:#2b2b2b;}.ad,.x{opacity:0.2;}.y{clip - path:url(#o);}.z{fill:#ebf7ff;}.ab{fill:#ffc60a;}.af{stroke:none;}.ag{filter:url(#m);}.ah{filter:url(#k);}.ai{filter:url(#i);}.aj{filter:url(#g);}.ak{filter:url(#e);}.al{filter:url(#b);}`}
                 </style>
                 <clipPath id="a">
                     <rect className="a" width="807" height="598" transform="translate(1093 225)"/>
@@ -174,7 +174,7 @@ const Preview = () => {
                         <tspan x="0" y="0">Secure</tspan>
                     </text>
                     <text className="v" transform="translate(3850.538 705.215)">
-                        <tspan x="0" y="0">https:</tspan>
+                        <tspan x="0" y="0">https://</tspan>
                     </text>
                     <text className="w" transform="translate(3892.538 705.215)">
                         <tspan x="0" y="0">{url}</tspan>
