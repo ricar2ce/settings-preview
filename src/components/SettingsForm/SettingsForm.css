@@ -24,7 +24,7 @@
 }
 .ant-radio-group {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
@@ -45,8 +45,8 @@
 
 .radio-options-card .ant-radio-button-wrapper{
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 12px;
     width: 399px;
     border-radius: 5px;

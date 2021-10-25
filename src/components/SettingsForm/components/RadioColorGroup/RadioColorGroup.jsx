@@ -14,10 +14,6 @@ const RadioColorGroup = React.forwardRef(({name, onChange, colors, initialValue}
         />
     )
 
-    const handleChange = (event) => {
-        this.setState(event.target.value);
-    }
-
     return (
         <div className="radio-color-group" ref={ref}>
             {listOptions}
