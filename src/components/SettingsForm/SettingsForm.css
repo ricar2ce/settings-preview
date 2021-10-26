@@ -26,6 +26,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -69,10 +70,4 @@
     opacity: 0.5 !important;
     width: 20px !important;
     height: 20px !important;
-}
-
-.radio-color-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
 }
