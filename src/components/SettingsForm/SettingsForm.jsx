@@ -51,6 +51,7 @@ export default function SettingsForm () {
             placeholder: "Ep: mi.dominio",
             widgetProps: {
                 suffix:<span style={{ color: 'rgba(0,0,0,.30)' }} >.dofleini.com</span>,
+                style: {borderRadius: '5px', maxHeight: '45px'},
             },
             colSpan: 24,
         },

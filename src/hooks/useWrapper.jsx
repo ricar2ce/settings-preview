@@ -17,7 +17,7 @@ const useWrapper = () => {
 const WrapperProvider = ({ ...props }) => {
   const [values, setValues] = useState({
       color: "#48B5FE",
-      url: "http://direccion.dominio.com",
+      url: "mi_dominio.plankton.com/proyectos/plan_de_ventas",
       name: "Dofleini"
   });
 

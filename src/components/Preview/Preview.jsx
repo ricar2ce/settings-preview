@@ -174,10 +174,10 @@ const Preview = () => {
                         <tspan x="0" y="0">Secure</tspan>
                     </text>
                     <text className="v" transform="translate(3850.538 705.215)">
-                        <tspan x="0" y="0">https://</tspan>
+                        <tspan x="0" y="0">https://  </tspan>
                     </text>
                     <text className="w" transform="translate(3892.538 705.215)">
-                        <tspan x="0" y="0">{url}</tspan>
+                        <tspan x="8" y="0">  {url}.dofleini.com</tspan>
                     </text>
                     <text className="w" transform="translate(3742.538 673.215)">
                         <tspan x="0" y="0">Plankton - {name}</tspan>

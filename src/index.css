@@ -37,9 +37,9 @@
     color: var(--color-black);
 }
 
-/*.preview-col {
-    min-height: 598px;
-}*/
+.preview-col {
+    max-height: 598px;
+}
 .preview {
     position: fixed;
     max-width: 40%;
@@ -57,6 +57,7 @@
 .pointer {
     cursor: pointer;
 }
+
 .ml-md {
     margin-left: 15px;
 }
